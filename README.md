@@ -8,11 +8,16 @@ The folder structure is as follows:
 
 ```csv
 artifact
-    |-- turboretry  --- contains the source code of our proposed `TurboRetry`
-    └-- README.md
+    |-- turboretry     --- source code of our proposed `TurboRetry`
+    |-- server         --- source code of attacker and server patches
+    |    +-- attacker  --- attacker traffic generator
+    |    +-- receiver  --- server patches of aioquic and quiche
+    +-- README.md
 ```
 
 ## Hardware and software information
+
+- List both the software and hardware versions in our testbed.
 
 ### Hardware
 
@@ -31,3 +36,5 @@ artifact
 - DOCA: 2.7.0
 - DPDK: 23.03
 - Ubuntu 22.04 with kernel version 5.15.0
+- Rust: rustup `1.28.1` + rustc `1.86.0`
+- Python: 3.12
