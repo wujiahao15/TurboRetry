@@ -12,6 +12,7 @@ artifact
     |-- server         --- source code of attacker and server patches
     |    +-- attacker  --- attacker traffic generator
     |    +-- receiver  --- server patches of aioquic and quiche
+    |    +-- client    --- benign client code and running script
     +-- README.md
 ```
 
