@@ -222,7 +222,7 @@ async def main(
     req_time = time.monotonic()
 
     latencies = await asyncio.gather(
-        *[send_request(configuration, url, data, include, output_dir) for _ in range(5)]
+        *[send_request(configuration, url, data, include, output_dir) for _ in range(15)]
     )
 
     TIME_IDXS += [req_time] * 5
