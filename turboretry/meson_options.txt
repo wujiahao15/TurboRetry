@@ -1,0 +1,2 @@
+option('TOP_PROFILE', type: 'boolean', value: false)
+option('DEBUG', type: 'boolean', value: false)
